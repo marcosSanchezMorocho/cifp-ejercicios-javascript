@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tenPercent(){
+            let number = document.fdatos.entrada.value;
+            document.writeln(`El 10% de ${number} es ${number*0.1}`)
+        }
+    </script>
+</head>
+<body>
+    <form name="fdatos">
+        Escribe un número: <input type="number" size="10" name="entrada" />
+        <input type="button" value="Pulsa aquí" onclick="tenPercent()" />
+    </form>
+</body>
+</html>

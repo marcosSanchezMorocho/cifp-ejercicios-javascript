@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cToF(){
+            let temp = document.fdatos.entrada.value;
+            document.writeln(`${temp}ºC -> ${temp*9/5+32}ºF`);
+        }
+    </script>
+</head>
+<body>
+    <form name="fdatos">
+        Convertir de ºC a ºF: <input type="number" size="10" name="entrada" />
+        <input type="button" value="Pulsa aquí" onclick="cToF()" />
+    </form>
+</body>
+</html>
